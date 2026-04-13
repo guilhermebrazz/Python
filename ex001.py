@@ -6,12 +6,13 @@ b) O valor a ser pago pelo esgoto, sabendo que este corresponde a 80% do valor d
 
 c) O valor total da conta, considerando água e esgoto.
 
-Dica: Lembre-se que 1 m3 = 1.000 litros'''
-entrada = float(input())
+Dica: Lembre-se que 1 m3 = 1.000 litros
+entrada: 5.0 0.1'''
+entrada = input()
 valores = entrada.split()
-metro3 = valores[0]
-val_litro = valores[1]
-tot_litros = metro3 * 1000
+metro3 = float(valores[0])
+val_litro = float(valores[1])
+tot_litros = metro3 * 100
 val_agua = tot_litros * val_litro
 esgoto = val_agua * 0.80
 total = val_agua + esgoto
